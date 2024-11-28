@@ -1,0 +1,133 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "ignore": [
+      "package-lock.json",
+      "dist",
+      "coverage",
+      ".nx",
+      "**/*.min.js",
+      "**/*.d.ts",
+      "**/module-federation.config.js",
+      "**/webpack.config.js",
+      "**/webpack.config.prod.js",
+      "apps/**/src",
+      "apps/wsdk-preview/public/mockServiceWorker.js",
+      "libs/sb2bo/@shared/models/src",
+      "libs/sb2bo/@shared/util/src",
+      "libs/sb2bo/@shared/components/src",
+      "libs/sb2bo/user-permissions/src",
+      "libs/sb2bo/client-settings/external-wallet-settings/src",
+      "libs/sb2bo/brand-settings/min-selections-manager/src",
+      "libs/sb2bo/brand-settings/champ-promo-manager/src",
+      "libs/sb2bo/brand-settings/market-promo-manager/src",
+      "libs/sb2bo/reports/liability-report/src",
+      "libs/sb2bo/bonus/bonus-campaigns/src",
+      "libs/sb2bo/brand-settings/trading-manager/src",
+      "libs/sb2bo/application-manager/mobile-configs/src",
+      "libs/sb2bo/feature/player-profile/src",
+      "libs/sb2bo/players/player-profile/src",
+      "libs/sb2bo/feature/vip-bonus/src",
+      "libs/sb2bo/markets-settings/fast-codes/src",
+      "libs/sb2bo/feature/toto/src",
+      "libs/sb2bo/tooling/src",
+      "libs/sb2bo/brand-settings/outright-manager/src",
+      "libs/sb2bo/mui-theme-provider/src",
+      "libs/sb2bo/feature/affiliates-manager/src",
+      "libs/sb2bo/bonus/multiple-bonus/src",
+      "libs/sb2bo/brand-settings/feed-manager/src",
+      "libs/sb2bo/players/player-list/src",
+      "libs/sb2bo/brand-settings/teaser/src",
+      "libs/sb2bo/markets-settings/market-translations/src",
+      "libs/sb2bo/brand-settings/bet-mentor/src",
+      "libs/sb2bo/brand-settings/boosted-odds/src",
+      "libs/sb2bo/shared/configs-manager/src",
+      "libs/sb2bo/general-settings/audit/src",
+      "libs/sb2bo/brand-settings/lottery-manager/src",
+      "libs/sb2bo/sb-management/competitor-manager/src",
+      "libs/sb2bo/markets-settings/market-manager/src",
+      "libs/sb2bo/brand-settings/menu-config/src",
+      "libs/sb2bo/shared/editor/.storybook",
+      "libs/sb2bo/@shared/components/.storybook",
+      "libs/sb2bo/reports/top-players-report/src",
+      "libs/sb2bo/reports/feed-report/src",
+      "libs/sb2bo/feature/result-manager/src",
+      "libs/sb2bo/feature/altbox/**/api",
+      "libs/wsdk/api/**/src",
+      "libs/shared/**/src",
+      "libs/wsdk/**/calc.worker.ts",
+      "libs/design-system/ui/public/mockServiceWorker.js",
+      "libs/design-system/theme/src/lib/json/*"
+    ]
+  },
+  "formatter": {
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto"
+  },
+  "organizeImports": {
+    "enabled": false
+  },
+  "linter": {
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "noSvgWithoutTitle": "off",
+        "useIframeTitle": "off"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "noUselessSwitchCase": "off",
+        "noUselessFragments": "off"
+      },
+      "style": {
+        "useEnumInitializers": "off",
+        "useNodejsImportProtocol": "off",
+        "useFilenamingConvention": {
+          "options": {
+            "strictCase": false,
+            "requireAscii": true,
+            "filenameCases": [
+              "camelCase",
+              "kebab-case",
+              "PascalCase",
+              "snake_case",
+              "export"
+            ]
+          },
+          "level": "error"
+        }
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "warn",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
+      },
+      "suspicious": {
+        "noShadowRestrictedNames": "off",
+        "useDefaultSwitchClauseLast": "error",
+        "noArrayIndexKey": "warn"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "attributePosition": "auto"
+    }
+  }
+}
